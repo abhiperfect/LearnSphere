@@ -14,7 +14,7 @@ import GameQuizComponent from "./components/GameQuizComponent";
 import HandsOnQuizComponent from "./components/HandsOnQuizComponent";
 import AudioQuizComponent from "./components/AudioQuizComponent";
 import TextQuizComponent from "./components/TextQuizComponent";
-
+import VideoLearner from "./components/VideoLearner";
 
 function App() {
 
@@ -40,6 +40,7 @@ function App() {
                 <Route path="/quiz/hands-on" element={<HandsOnQuizComponent />} />
                 <Route path="/quiz/audio" element={<AudioQuizComponent />} />
                 <Route path="/quiz/text" element={<TextQuizComponent />} />
+                <Route path="/video-learner" element={<VideoLearner />} />
               </Routes>
             </AuthProvider>
         </Router>
