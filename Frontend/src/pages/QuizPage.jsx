@@ -5,22 +5,30 @@ import { Box, Typography, Paper, Container } from "@mui/material";
 import OnboardingQuiz from "../components/OnboardingQuiz";
 import StickyHeader from "../shared/StickyHeader";
 import classifyUser from "../utils/classfyUser";
+import { useNavigate } from "react-router-dom";
 
 export default function QuizPage() {
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [userAnswers, setUserAnswers] = useState([]);
   const [userClassification, setUserClassification] = useState("");
+  const navigate = useNavigate();
 
   const handleQuizFinish = (answers) => {
+    console.log("Answers Array: ",answers);
+    const userClassification = classifyUser(answers);
+    console.log("User Classification: ", userClassification);
+    setUserClassification(userClassification);
     setUserAnswers(answers);
     setQuizCompleted(true);
+    navigate("/results", { state: { userClassification, answers } });
   };
 
-  const handleUserClassification = () => {
-    const userClassification = classifyUser(userAnswers);
-    setUserClassification(userClassification);
-    console.log(userClassification);
-  } 
+  // const handleUserClassification = (answers) => {
+  //   const userClassification = classifyUser(answers);
+  //   setUserClassification(userClassification);
+  //   return userClassification;
+  //   // console.log("UserClassification: ", userClassification);
+  // } 
 
   return (
     <React.Fragment>
@@ -36,16 +44,18 @@ export default function QuizPage() {
           // alignItems: 'center'
         }}
       >
-        <StickyHeader />
+        <StickyHeader title="Quizs 🙂‍↔️" />
         <Container maxWidth={false} width="100%">
           {!quizCompleted ? (
             <OnboardingQuiz onFinish={handleQuizFinish} />
           ) : (
+
+
             <Paper sx={{ p: 4, textAlign: "center", boxShadow: 3 }}>
               <Typography variant="h4" fontWeight="bold">
                 Quiz Completed!
               </Typography>
-              <Typography variant="body1">
+              {/* <Typography variant="body1">
                 Thanks for taking the quiz.
               </Typography>
               <Typography variant="body1">
@@ -56,7 +66,7 @@ export default function QuizPage() {
               </Typography>
               <Typography variant="body1">
                 <button onClick={handleUserClassification}>Classify User</button>
-              </Typography>
+              </Typography> */}
             </Paper>
           )}
         </Container>
