@@ -70,7 +70,7 @@ function classifyUser(answers) {
       "🎧 Listening to thought-provoking discussions": "audio",
       "🏗️ Working on real-world applications": "handsOn"
   };
-
+console.log("Answers Array: ",answers)
   // Process user answers
   answers.forEach(answer => {
       let category = mapping[answer];

@@ -7,51 +7,51 @@ const quizData = [
       options: ["🎥 Short Videos", "📖 Reading Articles", "🎮 Playing Games", "🎧 Listening to Podcasts", "🛠️ Hands-On Practice"],
       answer: { type: "learningStyle", value: "Varies" }
   },
-  {
-      question: "⚡ What keeps you engaged while learning?",
-      options: ["🎬 Visuals & explainer videos", "📜 Reading step-by-step guides", "🏆 Quizzes & interactive games", "🎙️ Listening to experts", "🔧 Practical application"],
-      answer: { type: "learningStyle", value: "Varies" }
-  },
-  {
-      question: "🧠 If you’re stuck on a difficult topic, what do you do?",
-      options: ["📹 Watch a video tutorial", "📑 Read a blog or article", "🎯 Solve a quiz or challenge", "🎧 Listen to a podcast", "🛠️ Try solving it practically"],
-      answer: { type: "problemSolvingApproach", value: "Varies" }
-  },
-  {
-      question: "📚 How do you like to revise a topic you’ve already learned?",
-      options: ["🎥 Watch a recap video", "📝 Read notes or a summary", "🎮 Play a game-based quiz", "🎙️ Listen to an audio summary", "🔬 Apply it to real-world scenarios"],
-      answer: { type: "revisionPreference", value: "Varies" }
-  },
-  {
-      question: "🎯 What type of learning format do you enjoy the most?",
-      options: ["📺 Short, engaging videos", "📜 Detailed text-based explanations", "🎲 Games & interactive puzzles", "🎤 Listening to real-life stories", "⚒️ Hands-on exercises"],
-      answer: { type: "contentPreference", value: "Varies" }
-  },
-  {
-      question: "💡 If you need to understand a complex concept, what do you prefer?",
-      options: ["📹 Watch an animated explainer video", "📚 Read a structured guide", "🧩 Solve an interactive puzzle", "🎙️ Listen to expert discussions", "🛠️ Experiment and learn by doing"],
-      answer: { type: "learningDepth", value: "Varies" }
-  },
-  {
-      question: "🛠️ If you could only pick one way to learn, what would it be?",
-      options: ["🎬 Watching tutorial videos", "📖 Reading in-depth articles", "🎮 Playing interactive games", "🎧 Listening to audio content", "🔧 Doing hands-on practice"],
-      answer: { type: "primaryLearningStyle", value: "Varies" }
-  },
-  {
-      question: "🖥️ You want to learn a new software tool. How do you start?",
-      options: ["📺 Watch a YouTube tutorial", "📚 Read the official documentation", "🎯 Use an interactive simulation", "🎙️ Listen to a podcast about its features", "🔍 Start using it immediately"],
-      answer: { type: "learningApproach", value: "Varies" }
-  },
-  {
-      question: "🚀 What excites you the most when learning something new?",
-      options: ["🎥 Seeing things in action through visuals", "📜 Understanding details through text", "🏆 Making learning fun with challenges", "🎙️ Hearing real-world insights", "🛠️ Applying knowledge practically"],
-      answer: { type: "motivationFactor", value: "Varies" }
-  },
-  {
-      question: "🔥 How do you stay motivated while learning?",
-      options: ["🎥 Engaging videos that simplify concepts", "📖 Well-structured reading materials", "🎮 Leveling up in a game", "🎧 Listening to thought-provoking discussions", "🏗️ Working on real-world applications"],
-      answer: { type: "engagementFactor", value: "Varies" }
-  }
+  // {
+  //     question: "⚡ What keeps you engaged while learning?",
+  //     options: ["🎬 Visuals & explainer videos", "📜 Reading step-by-step guides", "🏆 Quizzes & interactive games", "🎙️ Listening to experts", "🔧 Practical application"],
+  //     answer: { type: "learningStyle", value: "Varies" }
+  // },
+  // {
+  //     question: "🧠 If you’re stuck on a difficult topic, what do you do?",
+  //     options: ["📹 Watch a video tutorial", "📑 Read a blog or article", "🎯 Solve a quiz or challenge", "🎧 Listen to a podcast", "🛠️ Try solving it practically"],
+  //     answer: { type: "problemSolvingApproach", value: "Varies" }
+  // },
+  // {
+  //     question: "📚 How do you like to revise a topic you’ve already learned?",
+  //     options: ["🎥 Watch a recap video", "📝 Read notes or a summary", "🎮 Play a game-based quiz", "🎙️ Listen to an audio summary", "🔬 Apply it to real-world scenarios"],
+  //     answer: { type: "revisionPreference", value: "Varies" }
+  // },
+  // {
+  //     question: "🎯 What type of learning format do you enjoy the most?",
+  //     options: ["📺 Short, engaging videos", "📜 Detailed text-based explanations", "🎲 Games & interactive puzzles", "🎤 Listening to real-life stories", "⚒️ Hands-on exercises"],
+  //     answer: { type: "contentPreference", value: "Varies" }
+  // },
+  // {
+  //     question: "💡 If you need to understand a complex concept, what do you prefer?",
+  //     options: ["📹 Watch an animated explainer video", "📚 Read a structured guide", "🧩 Solve an interactive puzzle", "🎙️ Listen to expert discussions", "🛠️ Experiment and learn by doing"],
+  //     answer: { type: "learningDepth", value: "Varies" }
+  // },
+  // {
+  //     question: "🛠️ If you could only pick one way to learn, what would it be?",
+  //     options: ["🎬 Watching tutorial videos", "📖 Reading in-depth articles", "🎮 Playing interactive games", "🎧 Listening to audio content", "🔧 Doing hands-on practice"],
+  //     answer: { type: "primaryLearningStyle", value: "Varies" }
+  // },
+  // {
+  //     question: "🖥️ You want to learn a new software tool. How do you start?",
+  //     options: ["📺 Watch a YouTube tutorial", "📚 Read the official documentation", "🎯 Use an interactive simulation", "🎙️ Listen to a podcast about its features", "🔍 Start using it immediately"],
+  //     answer: { type: "learningApproach", value: "Varies" }
+  // },
+  // {
+  //     question: "🚀 What excites you the most when learning something new?",
+  //     options: ["🎥 Seeing things in action through visuals", "📜 Understanding details through text", "🏆 Making learning fun with challenges", "🎙️ Hearing real-world insights", "🛠️ Applying knowledge practically"],
+  //     answer: { type: "motivationFactor", value: "Varies" }
+  // },
+  // {
+  //     question: "🔥 How do you stay motivated while learning?",
+  //     options: ["🎥 Engaging videos that simplify concepts", "📖 Well-structured reading materials", "🎮 Leveling up in a game", "🎧 Listening to thought-provoking discussions", "🏗️ Working on real-world applications"],
+  //     answer: { type: "engagementFactor", value: "Varies" }
+  // }
 ];
 
 

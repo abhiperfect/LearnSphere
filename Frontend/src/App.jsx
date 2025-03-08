@@ -8,6 +8,13 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import QuizPage from "./pages/QuizPage";
 import { Toaster } from "react-hot-toast";
+import ResultComponent from "./components/ResultComponent";
+import VideoQuizComponent from "./components/VideoQuizComponent";
+import GameQuizComponent from "./components/GameQuizComponent";
+import HandsOnQuizComponent from "./components/HandsOnQuizComponent";
+import AudioQuizComponent from "./components/AudioQuizComponent";
+import TextQuizComponent from "./components/TextQuizComponent";
+
 
 function App() {
 
@@ -16,17 +23,23 @@ function App() {
         <Router>
           <AuthProvider>
               <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/login" element={<Login />} />
-                  <Route 
-                      path="/dashboard" 
-                      element={
-                          <ProtectedRoute>
-                              <Dashboard />
-                          </ProtectedRoute>
-                      } 
-                  />
-                   <Route path="/onboardquiz" element={<QuizPage />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/login" element={<Login />} />
+                <Route 
+                    path="/dashboard" 
+                    element={
+                        <ProtectedRoute>
+                            <Dashboard />
+                        </ProtectedRoute>
+                    } 
+                />
+                <Route path="/onboardquiz" element={<QuizPage />} />
+                <Route path="/results" element={<ResultComponent />} />
+                <Route path="/quiz/video" element={<VideoQuizComponent />} />
+                <Route path="/quiz/game" element={<GameQuizComponent />} />
+                <Route path="/quiz/hands-on" element={<HandsOnQuizComponent />} />
+                <Route path="/quiz/audio" element={<AudioQuizComponent />} />
+                <Route path="/quiz/text" element={<TextQuizComponent />} />
               </Routes>
             </AuthProvider>
         </Router>
