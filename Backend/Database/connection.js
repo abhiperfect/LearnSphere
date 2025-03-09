@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb+srv://abhishek:1NlwIdbPvr3xF0Yp@chatterbox.1emvdyq.mongodb.net/LearnSphere?retryWrites=true&w=majority', {
+        await mongoose.connect('mongodb://127.0.0.1:27017/calender', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });

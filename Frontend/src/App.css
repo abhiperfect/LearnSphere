@@ -1,42 +1,69 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+h1 {
   text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.calendar-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rbc-calendar {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.rbc-event {
+  background-color: #007bff !important;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  color: white;
+  font-size: 14px;
 }
 
-.card {
-  padding: 2em;
+.event-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.read-the-docs {
-  color: #888;
+.event-container span {
+  font-weight: bold;
+}
+
+button {
+  background-color: #28a745 !important;
+  color: white !important;
+  border-radius: 4px !important;
+  padding: 5px 10px !important;
+  font-size: 14px !important;
+}
+
+button:hover {
+  background-color: #218838 !important;
+}
+
+.text-field {
+  margin: 10px;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
